@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators} from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.sass'],
 })
-export class LoginComponent implements OnInit {
-
+export class AppComponent implements OnInit {
   title = 'Formulario-reactivo';
 
   public form = new FormGroup({});
@@ -26,8 +26,7 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  Ingresar(): any {
+  send(): any {
     console.log(this.form.value);
   }
 }
-
