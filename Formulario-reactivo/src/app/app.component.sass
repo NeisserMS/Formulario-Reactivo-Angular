@@ -1,0 +1,221 @@
+:host{
+  height: 100%
+
+  *
+    font-family: "Poppins", sans-serif !important
+
+  .login-design
+    display: flex
+    justify-content: space-between
+    overflow: hidden
+
+    .login-data
+      width: 50%
+      display: flex
+      flex-direction: column
+
+      form
+        margin: auto
+        max-width: 550px
+        padding: 35px // temporal
+        text-align: center !important
+
+        img
+          display: block
+          margin: auto
+
+        p
+          /* Ingresa tus datos para poder accesar */
+          font-family: "Poppins", sans-serif !important
+          font-weight: 300
+          font-style: normal
+          font-size: 16px
+          line-height: 33px
+          color: #8e8e8e
+          padding: 10px 30px 25px 30px
+          text-align: center
+
+        .input-group2
+          margin: 20px 0px 20px 0px
+
+          ::placeholder
+            /* Estilo del placeholder */
+            font-family: "Poppins", sans-serif !important
+            font-weight: 300
+            font-style: normal
+
+          input
+            padding-left: 55px!important
+            border-style: none
+            border-radius: 60px !important
+            box-shadow: 0px -4px 4px rgba(231, 231, 231, 0.1),
+              0px 4px 4px rgba(180, 180, 180, 0.25) !important;
+            width: 75%
+            height: 1.3rem
+            font-size: 1.0625rem
+            padding-top: 1.6rem; /* agrandar los input */
+            padding-bottom: 1.6rem
+
+          a
+            /* Olvidar Contraseña */
+
+            font-family: "Poppins", sans-serif !important
+            font-style: normal
+
+            text-decoration: none
+            color: #385a64
+            font-weight: 600
+
+            &:hover
+              color: #01705f
+
+      .ingresar
+        align-items: center
+        .btn-login
+          // /* Boton Ingresar */
+          border-radius: 60px
+          height: 65px
+          width: 80%
+          box-shadow: 0px -4px 4px rgba(180, 180, 180, 0.25),
+            0px 4px 4px rgba(180, 180, 180, 0.25) !important;
+          line-height: 1.7rem
+          border-style: none
+          font-size: 1.3rem
+          background-color: #009c86
+          color: #ffffff
+          font-weight: 600
+          cursor: pointer
+          text-align: center !important
+
+    /* Espaciado al texto del placeholder */
+
+    // .input-group2 input {
+    //   padding-left: 41px;
+    // }
+
+    .waves
+      background-image: url(/assets/img/Login.jpg)
+      background-size: cover !important
+      background-repeat: no-repeat
+      width: 50%
+      height: 100vh !important
+
+// /* Iconos de los Input */
+
+// .user {
+//   position: absolute;
+//   top: 50%;
+//   padding: 0 0 0 12px;
+
+// }
+
+// .input-fill i {
+//   position: absolute;
+//   font-size: 16px;
+//   left: 12px;
+//   top: 0;
+//   padding: 42px 8px;
+//   color: #959090;
+// }
+
+// /* Ver */
+
+// form .ver i {
+//   position: absolute;
+//   cursor: pointer;
+//   font-size: 16px;
+//   left: 280px;
+//   color: #959090;
+// }
+
+  }
+/* Puntos de quiebre */
+
+/* Dispositivos pequeños (tabletas verticales y teléfonos grandes, 600 px y más) */
+@media only screen and (max-width: 600px)
+  .waves
+    display: none
+
+  .login-design
+    width: 100% !important
+
+  .login-data
+    width: 100% !important
+    display: flex
+    justify-content: center
+
+
+  & form
+    max-width: 600px !important
+
+  .login-form .input-group2 a
+    text-align: center
+    font-size: 13px
+
+/* Dispositivos medianos (tabletas horizontales, 768 px y más) */
+@media only screen and (max-width: 946px)
+  .waves
+    display: none !important
+
+  .login-design
+    width: 90% !important
+
+  .login-data
+    width: 100% !important
+    margin: 15% 0px 0px 0px
+
+
+  & form
+    max-width: 600px !important
+
+/* Dispositivos grandes (laptops/desktops, 992px y más) */
+@media only screen and (max-width: 1100px)
+  .waves
+    display: none !important
+
+  .login-design
+    width: 50% !important
+    display: flex
+    align-items: center
+
+  .login-data
+    width: 100% !important
+
+
+  & form
+    max-width: 800px !important
+
+/* ---- */
+@media only screen and (max-width: 1200px)
+  .login-design
+    width: 100% !important
+    display: flex
+    align-items: center
+
+  .login-data
+    width: 100% !important
+
+
+  & form .botones .enviar
+    width: 100% !important
+    margin: 0 0 5% 0
+
+
+  & form .botones .cancelar
+    width: 100% !important
+
+
+  & form
+    max-width: 900px !important
+    margin: 0 10% 0 10% !important
+
+  .waves
+    width: 50%
+    height: 100vh !important
+    object-fit: cover !important
+
+@media only screen and (max-width: 1440px)
+  .waves
+    width: 50%
+    height: 100vh !important
+    background-size: cover !important
